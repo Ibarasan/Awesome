@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Awesome</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,600" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav">
+        <img class="logo" src="assets/logo_awesome.svg">
+        
+        <ul class="navButtons">
+            <li class="nav_button"><span class="underline"><a href="#">FEATURES</a></span></li>
+            <li class="nav_button"><span class="underline"><a href="#">CASE STUDIES</a></span></li>
+            <li class="nav_button"><span class="underline"><a href="#">ABOUT</a></span></li>
+            <li class="nav_button contact_border">CONTACT</li>
+        </ul>
+        <img id="burger" src="assets/hamburger_menu.svg" onclick="openNav()">
+    </div>
+    <div id="NavOverlay" class="overlay">
+        <div class="top_bar">
+            <img class="logo" src="assets/logo_awesome.svg">
+            <svg onclick="closeNav()" class="iks" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8 23.8"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 4</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M14.73,11.9l8.48-8.49A2,2,0,1,0,20.38.59L11.9,9.07,3.41.59A2,2,0,0,0,.59.59a2,2,0,0,0,0,2.82L9.07,11.9.59,20.38a2,2,0,1,0,2.82,2.83l8.49-8.48,8.48,8.48a2,2,0,1,0,2.83-2.83Z"/></g></g></svg>
+        </div>
+        <ul class="overlayMenu white">
+            <li class="overlayNav_Buttons underline" ><a href="#">FEATURES</a></li>
+            <li class="overlayNav_Buttons underline" ><a href="#">CASE STUDIES</a></li>
+            <li class="overlayNav_Buttons underline" ><a href="#">ABOUT</a></li>
+            <li class="contact_border">CONTACT</li>
+        </ul>
+        <div id="overlaySocials">
+                <div class="facebook"><svg class="social_icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><image data-name="Vector Smart Object copy" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSCDEcqUqaAAAAuElEQVQ4y+2RMQrCQBBF34qNmCJIesHGnEC8hGDpcXIPr5C9gJVtLmCdwt5UQUEYi+zKCrtrFlunWv7Mn/93PlJLStVKhKSapI3D9Ev/QcMNmLMlAyDq+CiFZcp5gGIE7UpZQuwPlRcN7u9Mfy2tC4cVDIEdy7SzZj/m4Eu64QA81RVAcnIALsxCwd1V62zs6EAWw/h4Syv78CkUsgd6dQKQkhLYvLvBHIwtqT7h5Cv9CeMIOmlevwD1aOO/mSfCrwAAAABJRU5ErkJggg=="/></svg></div>
+                <div class="twitter"><svg class="social_icons" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"><image data-name="Vector Smart Object copy 3" width="24" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAQAAADr5dYVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSCTUC37/CAAABJUlEQVQoz42SsUtCURTGv2cWPrElaAsH3QJraCoQWoIakmhoUOfoP2gJgra2IIiguWiNsCGMSCgIoiFoaokmiTIcLAp6v4bS3rvvlu83nvt9h++ecySRkBWG2KEOvLDPsEQvRdKSOKBskY/wxC+vHNHkUBIOb8AqPQF5jFtMHlhhTfTxCcAFYz7DBDauGJDEdadQoYArSZQs8ur3m5gLlFvU2GLXYtiQpDj9ymlPxU6apPLKW8f23P5eg2jMS1LM8bStKHiqtSeSoBqh/7F/6imWqXcxzPgNGd67yE/MQ1j8V94kE76dKc5/dm7ywbT9OpOs44XkLQpBWQqXNLNsWvdxQ87sO8npH8nvWSJu5nAkiawWNK5RDcoVetSdLlXRmeOFg38BCMLoAm2YCvcAAAAASUVORK5CYII="/></svg></div>
+                <div class="gplus"><svg class="social_icons" xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17"><image data-name="Vector Smart Object copy 4" width="24" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAQAAABtcaS7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSChUSnMzJAAABHUlEQVQoz42TMSxDURSGv1cVEWUwdSQGYZJ0JamkoSsxsZgkEquE1cDIIGKymMRktTGg0pXJILF0k1CSovkM76Xa1z780829/7l/7vnOhUgWPLGivnjpqt38Jgc8tVV3jiTbe7y2XVvJBXuRpeSiOWc9Vo8MkuzDfql6YKqxN2VXzDXohOPhclvV27glVrCsPgKkmAFgJ6jzLwW+kgH6gyqARTaaTp+DOXCNBbKMUuMGUPW9JfpHny1NUTVNlQy9ZsKEmMKLHrhoTiirOh8lZM2bN++Kqvftj05zTg7Y9CyoQ1ChEg4KAFedGjYUcThs4jBtTdViBw7gboP0kjkL7vuhajmBdsIsvTmWzLF9Wp+c/INg4z9ULbluX5LvG5CyIvpPf1M4AAAAAElFTkSuQmCC"/></svg></div>
+        </div>
+    </div>
+    <div class="content">
+        <p class="mainText">Not to make you feel dizzy but the challenge is worth it. Aim high, have fun, <span class="bold white">be awesome.</span></p>
+        <svg id="circle_square" c;ass=""xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"><image data-name="Vector Smart Object" width="104" height="104" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoCAQAAAC3FX0qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSETNpp4KuAAADzUlEQVR42u3bMU/bQBTA8eeqEwkSA8yoU6V+ABhRpYxkjRgzMFRdyNaZCYbuVGKJUIZsKFKnDGRnY0FUDI3EF6hUxACIf4dcIkIc39k5O/eser3z3f1i+/zu+SJSwEHECSdERfRVFAcoCWnCKQdpiqOf9IpzwYV60hRnhRXlpGmOiIhq0ixHNSmeo5Y0n6OSlMxRR7JzVJHcOGpI7hwVpHSc4EnpOUGTsnGCJWXnBEriODsnQNKinMBIPjgBkXxxAiH55ARA8s1ZMikPjh9SppM4lm8iIjKQ3eghseaafJQPUpWqiNzLvfyWX9GfZJL8lM8iIvJDvkb4/LnmchwWCOs06XBH3HFHhybr80mF3ng2DhF1ejxhO57oUY8fcIGkZA4RDa6mhv3CkD5dTjmlS58hL1PlVzTihlwQycL5xODVUG84okZlplaFGkfcvKo54NNSSEkcIlo8mvJn2mxZW9uizbM545HW7KBzJiVyKpxPfu8zNp3b3ORsct55zNXMj5TI2eDSlN6yk7rlHW7N2ZdsFESycK5NaZfVTK2v0jUtXBdCstxs46tzuFAfh5OrlPeNZ5kKxs/OwcL9HEyepTynB8tE3fJxdSatja9SK6bMD8n63hlN1F0fHBER8yw95vReskYFAzOzZZoKYntcNTPeIIfowRqzNUx56ok6sdcd02ojtjQ7ySEEHcVsZz45IiLmVXvlNWy1LxComyDHOSpw7nvTBET1OeXpSU7rnR4Abd8cERHaAPTmlqcjOS7fRusdawiaCbQFwJOXJaBbroAmADd5cEREzOKimVDDjeSa+qADwFFuoCMAOol17CT3TI7JFdRyA9UAuLPUSial4KwB8DIbRnoDVcxCfS0zKU2ejW0AhnlxREQYArBtrRdPSpc2ZA+Afq6gPgB7DjVnSWmzoOz7DUlj+xiFqftOdadI792zoJOjKiIif/MEmdarLlWjB3ZNtvWLyLtch7Wco1y3XAZS8JNCWpKCaTsdScWLNSVJQ+iThqQkOHUnqVk+uJIULfCcSXqW4G4kVUkSF5KyNJYTSVei0U5Slwp2IGlL1juQtH1OsZEUfvCykvR9krSS9H00diBp+6xvJenbeGEl6dsaYyMp3LzkQNK2vcxOUrcB0IUksswtmv830Y5J9quUqd1y7dwu2d76kv37IQCOT1IgHF+kgDg+SIFxFiUFyFmEFCgnKylgThZS4Jy0JAWcNCQlHFeSIo4LSRnHRlLISSIp5cwjKebEkZRz3pJKwHlDGnO+K+ZMkUbH8bLH45dUBs4rUlk4hlQQ5x/IZIjhAKEA4QAAAABJRU5ErkJggg=="/></svg>
+        <div class="subText white bold">Look carefully and notice every detail, nothing tricky though.</div>
+        <div class="socials">
+            <div class="facebook"><svg class="social_icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><image data-name="Vector Smart Object copy" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSCDEcqUqaAAAAuElEQVQ4y+2RMQrCQBBF34qNmCJIesHGnEC8hGDpcXIPr5C9gJVtLmCdwt5UQUEYi+zKCrtrFlunWv7Mn/93PlJLStVKhKSapI3D9Ev/QcMNmLMlAyDq+CiFZcp5gGIE7UpZQuwPlRcN7u9Mfy2tC4cVDIEdy7SzZj/m4Eu64QA81RVAcnIALsxCwd1V62zs6EAWw/h4Syv78CkUsgd6dQKQkhLYvLvBHIwtqT7h5Cv9CeMIOmlevwD1aOO/mSfCrwAAAABJRU5ErkJggg=="/></svg><span>/<span class="filler"></span> AWESOME</span></div>
+            <div class="twitter"><svg class="social_icons" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"><image data-name="Vector Smart Object copy 3" width="24" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAQAAADr5dYVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSCTUC37/CAAABJUlEQVQoz42SsUtCURTGv2cWPrElaAsH3QJraCoQWoIakmhoUOfoP2gJgra2IIiguWiNsCGMSCgIoiFoaokmiTIcLAp6v4bS3rvvlu83nvt9h++ecySRkBWG2KEOvLDPsEQvRdKSOKBskY/wxC+vHNHkUBIOb8AqPQF5jFtMHlhhTfTxCcAFYz7DBDauGJDEdadQoYArSZQs8ur3m5gLlFvU2GLXYtiQpDj9ymlPxU6apPLKW8f23P5eg2jMS1LM8bStKHiqtSeSoBqh/7F/6imWqXcxzPgNGd67yE/MQ1j8V94kE76dKc5/dm7ywbT9OpOs44XkLQpBWQqXNLNsWvdxQ87sO8npH8nvWSJu5nAkiawWNK5RDcoVetSdLlXRmeOFg38BCMLoAm2YCvcAAAAASUVORK5CYII="/></svg><span>/<span class="filler"></span> AWESOME</span></div>
+            <div class="gplus"><svg class="social_icons" xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17"><image data-name="Vector Smart Object copy 4" width="24" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARCAQAAABtcaS7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQgSChUSnMzJAAABHUlEQVQoz42TMSxDURSGv1cVEWUwdSQGYZJ0JamkoSsxsZgkEquE1cDIIGKymMRktTGg0pXJILF0k1CSovkM76Xa1z780829/7l/7vnOhUgWPLGivnjpqt38Jgc8tVV3jiTbe7y2XVvJBXuRpeSiOWc9Vo8MkuzDfql6YKqxN2VXzDXohOPhclvV27glVrCsPgKkmAFgJ6jzLwW+kgH6gyqARTaaTp+DOXCNBbKMUuMGUPW9JfpHny1NUTVNlQy9ZsKEmMKLHrhoTiirOh8lZM2bN++Kqvftj05zTg7Y9CyoQ1ChEg4KAFedGjYUcThs4jBtTdViBw7gboP0kjkL7vuhajmBdsIsvTmWzLF9Wp+c/INg4z9ULbluX5LvG5CyIvpPf1M4AAAAAElFTkSuQmCC"/></svg><span>/<span class="filler"></span> AWESOME</span></div>
+        </div>
+        <div class="triangle"><p class="bold more">MORE</p><div class="plus">+</div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

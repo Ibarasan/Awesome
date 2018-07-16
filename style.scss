@@ -1,0 +1,321 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+html {
+    background-image: url("assets/bg_image.jpg");
+    background-position: 70% 30%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    justify-content:space-between;
+    margin: 30px;
+    margin-left: 20px;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_button {
+    margin-right: 25px;
+    height: auto;
+    width: auto;
+    text-align: center; 
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.underline:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid white;
+    transition: 0.4s;
+}
+
+.underline:hover:after {
+    width: 100%;
+  }
+
+.contact_border:hover {
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+.contact_border {
+    margin-left: 20px;
+    padding: 10px 30px 10px 30px;
+    border: 3px solid white;
+    border-radius: 7px;
+}
+
+#burger {
+    display: none;
+}
+
+.logo {
+    height: 60px;
+    padding-left: 50px;
+    width: auto;
+}
+
+.content {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+.mainText {
+    font-size: 35px;;
+    margin: 0;
+    letter-spacing: 0.1px;
+    width: 545px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.white {
+    color: white;
+}
+
+#circle_square {
+    padding: 130px;
+}
+
+.socials {
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.socials > div {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.socials > div > span {
+    margin-left: 15px;
+}
+
+.social_icons {
+    height: 20px;
+    align-self: center;
+}
+
+.filler {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.triangle {
+    display: flex;
+    flex-direction: column;
+    width: 0; 
+    height: 0; 
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+  }
+
+.triangle > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 15px;
+    align-self: center;
+    opacity: 50%;
+}
+
+.plus {
+    display: none;
+}
+
+.iks {
+    height: 20px;
+    width: auto;
+}
+
+
+.overlay {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #001820;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+
+}
+
+.overlayMenu {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.overlay li {
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    position: relative;
+ }
+
+ .top_bar {
+     margin-top: 30px;
+     margin-bottom: 40px;   
+ }
+
+ .iks {
+    display: block;
+    height: 23px;
+    align-self: center;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+ }
+
+ #overlaySocials  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-right: 8%;
+ }
+
+
+  @media (max-width: 840px) {
+
+    html {
+        background-size:cover;
+        background-position: 60% 20%;
+    }
+    .nav {
+        justify-content: center
+    }
+
+    .navButtons {
+        display: none;
+    }
+
+
+    .logo {
+        height: 32px;
+        padding: 0;
+
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+
+    .mainText {
+        font-size: 22px;
+        color: white;
+        width: 240px;
+    }
+
+    .subText {
+        font-size: 11px;
+        width: 230px;
+    }
+
+    #circle_square {
+        padding: 25px;
+        height: 70px;
+    }
+
+    .socials {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .socials > div {
+        margin-bottom: 20px;
+        height: 15px;
+        font-size: 12px;
+    }
+
+    .social_icons {
+        height: 15px;
+    }
+    
+    .triangle {
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .plus {
+        display: block;
+        color: black;
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: center;
+        align-self: center;   
+        font-weight: 600px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .contact_border {
+        margin: 0;
+    }
+
+    #burger {
+        display: block;
+        height: 23px;
+        align-self: center;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        
+    }
+
+
+  }
